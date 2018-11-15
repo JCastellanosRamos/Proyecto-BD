@@ -1,0 +1,105 @@
+<head>
+ <title>MBSTORE|ALTA</title>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>!windows.jquery && document.write("<script src='js/jquery.min.js'><\/script>");
+  </script>
+  <script src="jquery.flexslider-min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=1220" /> 
+    <script src="./js/Scriptsmenu.js"></script>
+    <script src="./js/Funciones.js"></script>
+      <script type="text/javascript">
+    $(window).load(function() {
+      $('.flexslider').flexslider();
+    });
+  </script>
+  <!-- [if lt IE 9]>
+    <script src="html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+ <header>
+    <a href="">
+                <img class="fade" alt="MBSTORE| 2016" src="../img/mbstore.png" />
+        </a></header>
+
+ <link rel="stylesheet" href="../css/estilos.css"/> 
+ <link rel="stylesheet" href="../css/style.css"/>
+ <link rel="stylesheet" href="../css/login.css"/>
+<div>
+
+  <p>
+        {ETIQUETA}
+  </p>
+
+
+<section id="principal">
+<form name="forma" action="registro.php" method="post" onsubmit="return validar()">
+<fieldset>
+    <legend>Usuario Nuevo</legend>
+    
+    <div>
+    <label for="nombre">Nombre</label>
+    <input title ="Campo obligatorio"  type="text" id="nombre" name="nombre"required/>
+
+    </div>
+    
+    <div>
+    <label for="ap_paterno">Apellido Paterno</label>
+    <input title ="Campo obligatorio"  type="text" id="ap_paterno" size="30" name="ap_paterno" required/>
+    </div>
+
+    <div>
+  <label for="ap_materno">Apellido Materno</label>
+  <input title ="Campo obligatorio"  type="text" id="ap_materno" size="30" name="ap_materno"required />
+    </div>
+    
+    <div>
+    <label for="genero">G&eacute;nero</label>
+    <select name="genero">
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+    </select>
+    </div>
+    
+    <div>
+  <label for="fecha_nacimiento">Fecha de nacimiento</label>
+  <input type="date" id="fecha_nacimiento" step="1" min="1980-01-01" max="2018-01-01" value="2016-01-01" name="fecha_nacimiento" />
+    </div>
+
+    <div>
+  <label for="correo_electronico">Correo Electr&oacute;nico</label>
+  <input title ="Campo obligatorio" type="text" id="correo_electronico" name="correo_electronico" required />
+    </div>
+
+  <div>
+    <label for="usuario">Usuario</label>
+    <input title ="Campo obligatorio"  type="text" id="usuario" name="usuario"required />
+    </div>
+  
+    
+    <div>
+    <label for="contrasena">Contraseña</label>
+    <input title ="Campo obligatorio"   type="text" id="contrasena" name="contrasena" required/>
+    </div>
+    
+
+    <div>
+         <input type="radio" name="tipo_usuario" value="1"><label>Administrador</label>
+         <input type="radio" name="tipo_usuario" value="2" checked="checked"><label>Normal</label>
+     </div>
+     <!-- <div>
+         <input type="radio" name="tipUser" value="P">Premium
+         <input type="radio" name="tipUser" value="N" checked="checked">Normal
+     </div> -->
+
+
+    <div align="center" class='contacto'>
+    <input class="btn" type="submit" value="Enviar" action="registro.php"/>
+    </div>
+    
+</fieldset>
+</form>
+</div></section>

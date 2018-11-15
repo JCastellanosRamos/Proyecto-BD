@@ -1,0 +1,86 @@
+<head>
+ <title>MBSTORE|CARGAR</title>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>!windows.jquery && document.write("<script src='js/jquery.min.js'><\/script>");
+  </script>
+  <script src="jquery.flexslider-min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=1220" /> 
+    <script src="./js/Scriptsmenu.js"></script>
+    <script src="./js/Funciones.js"></script>
+      <script type="text/javascript">
+    $(window).load(function() {
+      $('.flexslider').flexslider();
+    });
+  </script>
+  <!-- [if lt IE 9]>
+    <script src="html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+ <header>
+    <a href="">
+                <img class="fade" alt="MBSTORE| 2016" src="../img/mbstore.png" />
+        </a></header>
+
+ <link rel="stylesheet" href="../css/estilos.css"/> <link rel="stylesheet" href="../css/style.css"/>
+
+<div>
+
+  <p>
+        {ETIQUETA}
+  </p>
+
+
+
+<section id="principal">
+<form name="forma" action="cargar.php" method="post" onsubmit="return validar()">
+<fieldset>
+    <legend>App Nueva</legend>
+    
+    <div>
+    <label for="nombre">Nombre</label>
+    <input title ="Campo obligatorio" type="text" id="nombre" name="nombre" required />
+    </div>
+    
+    <div>
+    <label for="descripcion">Descripcion</label>
+    <input title ="Campo obligatorio" type="text" id="descripcion" size="30" name="descripcion" required />
+    </div>
+
+    <div>
+  <label for="fecha_salida">Fecha de salida</label>
+  <input type="date" id="fecha_salida" step="1" min="1980-01-01" max="2018-01-01" value="2016-01-01" name="fecha_salida" />
+    </div>
+    
+    <div>
+    <label for="desarrollador">Desarrollador</label>
+    <select name="desarrollador">
+        <option value="1">Google</option>
+        <option value="2">EA Sports</option>
+        <option value="3">MSM</option>
+        <option value="4">Microsoft</option>
+        <option value="5">SmartSoft</option>
+    </select>
+    </div>
+
+    <div>
+    <label for="Categoria">Categoria</label>
+    <select name="categoria">
+        <option value="1">Utilidades</option>
+        <option value="2">Sociales</option>
+        <option value="3">Educacion</option>
+        <option value="4">Juegos</option>
+    </select>
+    </div>
+      
+    <div align="center" class='contacto'>
+    <input class="btn" type="submit" value="Enviar" action="cargar.php"/>
+    </div>
+    
+</fieldset>
+</form>
+</div>
+</section>

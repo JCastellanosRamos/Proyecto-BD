@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>MBSTORE|REGISTRO</title>
+        <meta charset= "UTF-8">
+        <link rel="stylesheet" href="css/estilos.css"/>
+
+    <link href ="css/login.css" rel ="stylesheet" type ="text/css">
+    </head>
+    <header>
+    <a href="login.html">
+                <img class="fade" alt="MBSTORE| 2016" src="img/mbstore.png" />
+        </a></header>
+    <body>      
+    <section id="contenido">
+        <aside>
+
+        </aside>
+    <section id="principal">
+    <center><h2>Registrarte Gratis</h2></center>
+        <div class ="login">
+            <form action ="crear.php" method ="POST">
+            <fieldset>
+                <legend>Crear cuenta</legend> 
+            <table>
+                <tr>
+                    <td><input title="Es necesario un nombre de usuario" type="text" class ="pass" name ="nombre" placeholder="Nombre" required> <input title="Campo obligatorio" class ="pass" type="text" name ="ap_paterno" placeholder="Apellido Paterno" required></td>
+                </tr>
+                  <tr>
+                    <td><input title="Es necesario un nombre de usuario" type="text" class ="pass" name ="ap_materno" placeholder="Apellido Marteno" required> <input title="Campo obligatorio" class ="pass" type="text" name ="genero" placeholder="Género" required></td>
+                </tr>
+                  <tr>
+                    <td><input title="Es necesario un nombre de usuario" type="text" class ="pass" name ="correo_electronico" placeholder="Correo Electronico" required></td>
+                </tr>
+                  <tr>
+                    <td><h3>Fecha de Nacimiento:</h3> <input type="date" id="fecha" step="1" min="1980-01-01" max="2016-01-01" value="2016-01-01" name="fecha_nacimiento" /></td>
+                </tr>
+                <tr>
+                    <td><input title="Campo obligatorio" type ="text" name = "usuario" class ="pass" placeholder ="Nombre de usuario" required></td>
+                </tr>
+                <tr>
+                    <td><input title ="Campo obligatorio" class="pass" type ="text" name ="contrasena" placeholder="Contraseña" required></td>
+                </tr>   
+            </table>   
+                <input type ="submit" value =" Registrarse"  id ="res">
+              </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

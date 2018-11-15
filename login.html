@@ -1,0 +1,57 @@
+<?php
+session_start();
+session_destroy();
+?>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Inicio </title>
+<link href ="css/login.css" rel ="stylesheet" type ="text/css">
+<link href ="css/estilos.css" rel ="stylesheet" type ="text/css">
+</head>
+   <header>
+    <a href="login.html">
+                <img class="fade" alt="MBSTORE| 2016" src="img/mbstore.png" />
+        </a></header>
+<body>
+ <section id="contenido">
+  <aside>
+
+            <!-- Publicidad -->
+            <a href=""><img class="fade" src="img/plataformas.jpg"></a>
+        </aside>
+         <section id="principal">
+<section id="Formulario">
+<center><h2> Iniciar Sesión </h2></center>
+<br>
+<br>	
+<div class ="login">
+<form action =ingresar.php method= "POST" > 
+<center>    
+    <fieldset>       
+        <legend>Login</legend>	
+		<p>
+            <input title = "se necesita el nombre" type = "text" name = "Usuario" placeholder = "usuario" required>
+        </p> 
+        <p>
+            <input  title = "se necesita la contraseña" type = "password" name = "Contrasena" placeholder = "password" required>
+        </p> 
+        <p>
+            <input type="radio" name="Tipo_usuario" value="1" checked="checked">Administrador
+            <input type="radio" name="Tipo_usuario" value="2">Usuario
+        </p>
+        <p>
+            <input  type = "submit" value = "Entrar"> 
+            <input  type = "reset" value = "Limpiar"> 
+        </p>               
+        <p>
+            <a href ="crear.html">
+            Crear cuenta
+        </a>
+        </p>
+</fieldset>
+</center>
+</form>	
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Etiqueta para header y solo centrarlo y el ancho*/
+#header {
+margin:auto;
+width:500px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Etiqueta para listas sin estilos*/
+ul, ol {
+list-style:none;
+}
+
+/* Etiqueta para acomodar el menu*/
+.nav > li {
+float:left;
+}
+
+
+.nav{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.nav li a {
+background-color:#86B404;
+color:#fff;
+text-decoration:none;
+padding:10px 12px;
+display:block;
+}
+
+/* Etiqueta para cuando pasamos el mouse */
+.nav li a:hover {
+background-color:#434343;
+}
+
+/* display desaparecer el submenu*/
+.nav li ul {
+display:none;
+position:absolute;
+min-width:140px;
+}
+
+/* Etiqueta para que la lista cuando pasa el mouse aparesca*/
+.nav li:hover > ul {
+display:block;
+}
+
+/*
+ Para hacer un submenu dentro de otro submenu
+.nav li ul li {
+position:relative;
+}
+
+
+.nav li ul li ul {
+right:-140px;
+top:0px;
+}
+
+*/
+
+section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+
+
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+
+
+/*El estilo que se usara para el titulo de la pagina y la parte del contenido*/
+
+
+
+#seccion{
+    width:350px;
+    float:left;
+    padding:10px;
+    text-align:right;
+}
+
+/*Estilo para el contenido que se mostrara en la pagina*/
+.contenido{
+    font-family: arial, verdana, sans-serif;
+    width: 600px;
+    height: 590px;
+    position: relative;
+    top: 111px;
+    left: 380px;
+}
+
+
+.contenedor{
+    font-family: arial, verdana, sans-serif;
+    width: 600px;
+    height: 590px;
+    position: relative;
+    top: 111px;
+    left: 380px;
+}
+
+
+/*Estilo para el botones*/
+
+.contacto input[type='submit']{
+    border: 1px solid #CED5D7;
+    box-shadow: 0 0 0 3px #EEF5F7;
+    padding: 8px 16px;
+    boder-radius: 20px;
+    font-weight: bold;
+    font-family: "chalet";
+    text-shadow: 1px 1px 0px white;
+
+background: #96d64a;
+background: -moz-linear-gradient(top, #96d64a 0%, #d9fdb0 100%);
+background: -webkit-linear-gradient(top, #96d64a 0%,#d9fdb0 100%);
+}
+
+}
+.contacto input[type='submit']:hover{
+    background: #edfcff;
+    background: -moz-linear-gradient(top, #edfcff 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #edfcff 0%,#cfe6ef 100%);
+}
+
+
+.contacto input[type='submit']:active{
+    background: #cfe6ef;
+    background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+    background: -webkit-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
+}
+
+input: focus {
+    border: 2px solid #000;
+    background: #F3F3F3;
+}
+
+input#tipUser{
+    size: 40;
+}
+
+

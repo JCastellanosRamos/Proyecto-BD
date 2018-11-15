@@ -1,0 +1,61 @@
+.i > a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+.i > a:hover {
+	-moz-transform: scale (1.5) rotate(5deg);
+	-webkit-transform: scale(1.5) rotate(5deg);
+	-ms-transform: scale(1.5) rotate(5deg);
+	transform: scale(1.5) rotate(5deg);
+
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+} 
+
+
+
+.icon-facebook{
+background:#3b5998;
+border-radius: 0.25em;
+display: inline-block;
+font-size: 2.5em;
+padding: 0.25em;
+color: #fff;
+
+}
+
+
+.icon-instagram{
+background:#587597;
+border-radius: 0.25em;
+display: inline-block;
+font-size: 2.5em;
+padding: 0.25em;
+color:#fff;
+}
+
+.icon-youtube3{
+	background:#a02609;
+	border-radius: 0.25em;
+	display: inline-block;
+	font-size: 2.5em;
+	padding: 0.25em;
+	color:#fff;
+}
+
+
+.icon-twitter{
+background:#3b8fed;
+border-radius: 0.25em;
+display: inline-block;
+font-size: 2.5em;
+padding: 0.25em;
+color: #fff;
+}
+
+
+}
+
